@@ -31,7 +31,7 @@ HTML 入门笔记  HTML 是谁发明的？  回答：李爵士（Tim Berners-Lee
       <pubDate>Sat, 28 Sep 2019 20:23:39 +0800</pubDate>
       
       <guid>http://example.org/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B02/</guid>
-      <description>今天遇到一个大麻烦，在更新文件后未运行 hugo，导致 public 无法提交到 github。 方方老师指点迷津：改-hugo-git add . -git commit -git push 完胜。</description>
+      <description>今天遇到一个大麻烦，在更新文件后未运行 hugo，导致 public 无法提交到 github。 方方老师指点迷津：改-hugo-git add . -git commit -git push 完胜,解决问题了。</description>
     </item>
     
   </channel>
