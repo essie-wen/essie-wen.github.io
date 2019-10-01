@@ -6,10 +6,23 @@
     <description>Recent content on 文化人的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-HanS</language>
-    <lastBuildDate>Sat, 28 Sep 2019 20:23:39 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 10:23:39 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Tue, 01 Oct 2019 10:23:39 +0800</pubDate>
+      
+      <guid>http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>HTML 常用标签 重点内容为 4 部分：a 标签、table 标签、img 标签和 form 标签。
+1. a 标签的用法 href  跳转到路径或者外部网址，href：网址、路径、伪协议（宇宙唯一解 javascript:;)、id。 发邮件 e.g href=&amp;ldquo;mailto:xxx@cc&amp;rdquo; 打电话 e.g href=&amp;ldquo;tel:137xxxxxx&amp;rdquo;  2. img 标签的用法 发出 get 请求，展示一张图片
+加入笔记看看吧 3. table 标签的用法 就是表格，默认的格式很丑，需要重置格式。下面 2 行重置格式的万金油，记住了。
+border-collapse：collapse； border-spacing：0；  其他的看笔记 注意 3 点
+ 一般不监听 需要有 name 需要 submit  其他看笔记。来张照片看笔记 感想 初次接触到 HTML，以加倍 1.2~1.5 的去听讲，听完了一顿懵，老老实实跟着老师 key 一边，还是很有感觉的。 学走路的时候最难，跑起来就容易了，慢慢磨吧。</description>
+    </item>
     
     <item>
       <title>HTML入门笔记</title>
