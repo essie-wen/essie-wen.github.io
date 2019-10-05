@@ -6,10 +6,22 @@
     <description>Recent content on 文化人的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-HanS</language>
-    <lastBuildDate>Tue, 01 Oct 2019 10:23:39 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Oct 2019 18:28:39 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS知识总结</title>
+      <link>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 05 Oct 2019 18:28:39 +0800</pubDate>
+      
+      <guid>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>浏览器渲染的原理  创建 DOM（html 树） 创建 CSSOM(CSS 树) DOM 和 CSSOM 合成 render tree（主要是 body） 布局 绘制 paint 合成 composite  详细了解可以查看三篇由 Google 写的文章：《渲染树构建、布局及绘制》、《渲染性能》、《使用 transform 来实现动画》。
+#CSS 动画的两种做法
+ transition transition CSS 属性是 transition-property，transition-duration，transition-timing-function 和 transition-delay 的一个简写属性。过渡可以为一个元素在不同状态之间切换的时候定义不同的过渡效果。比如在不同的伪元素之间切换，像是 :hover，:active 或者通过 JavaScript 实现的状态变化。  CSS 示例：
+#heart{ display: inline-block; margin: 100px; position: relative; transition: all 1s; } #heart:hover{ transform: scale(1.2); }   animation CSS animation 属性是 animation-name，animation-duration, animation-timing-function，animation-delay，animation-iteration-count，animation-direction，animation-fill-mode 和 animation-play-state 属性的一个简写属性形式。 CSS 示例：</description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>
@@ -21,6 +33,20 @@
 1. a 标签的用法 href  跳转到路径或者外部网址，href：网址、路径、伪协议（宇宙唯一解 javascript:;)、id。 发邮件 e.g href=&amp;ldquo;mailto:xxx@cc&amp;rdquo; 打电话 e.g href=&amp;ldquo;tel:137xxxxxx&amp;rdquo; 另外提到 iframe，听懂了，但是呢作为小白，默默走开就好，后面再说。  2. img 标签的用法 发出 get 请求，展示一张图片
 4 个属性  alt：加载失败提示 width：设置图片宽度，100%为自适应屏幕大小，手机来说高度不设。 height：设置图片高度。建议宽和高二选一，不要搞得变形恶心自己。 src：图片路径，显示的图片在哪里。  2 个事件  onload：加载成功 onerror：加载失败 搭配 javascript 可以做深层次的统计，小白飘过就好~  3. table 标签的用法 就是表格，默认的格式很丑，需要重置格式。下面 2 行重置格式的万金油，记住了。
 border-collapse：collapse； border-spacing：0；  3 个元素  thead：排头 tbody：中间，一般有值部分 tfoot：最下面，总和 统计之类  单元格组成 记住 3 个  th 头 tr table row td 值  4.</description>
+    </item>
+    
+    <item>
+      <title>HTML常用标签 有图片无法显示</title>
+      <link>http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE-%E6%9C%89%E5%9B%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/</link>
+      <pubDate>Tue, 01 Oct 2019 10:23:39 +0800</pubDate>
+      
+      <guid>http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE-%E6%9C%89%E5%9B%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/</guid>
+      <description>HTML 常用标签 重点内容为 4 部分：a 标签、table 标签、img 标签和 form 标签。
+1. a 标签的用法 href  跳转到路径或者外部网址，href：网址、路径、伪协议（宇宙唯一解 javascript:;)、id。 发邮件 e.g href=&amp;ldquo;mailto:xxx@cc&amp;rdquo; 打电话 e.g href=&amp;ldquo;tel:137xxxxxx&amp;rdquo;  2. img 标签的用法 发出 get 请求，展示一张图片
+加入笔记看看吧 3. table 标签的用法 就是表格，默认的格式很丑，需要重置格式。下面 2 行重置格式的万金油，记住了。
+border-collapse：collapse； border-spacing：0；  其他的看笔记 2222222222 注意 3 点
+ 一般不监听 需要有 name 需要 submit  其他看笔记。来张照片看笔记
+感想 初次接触到 HTML，以加倍 1.2~1.5 的去听讲，听完了一顿懵，老老实实跟着老师 key 一边，还是很有感觉的。 学走路的时候最难，跑起来就容易了，慢慢磨吧。</description>
     </item>
     
     <item>
