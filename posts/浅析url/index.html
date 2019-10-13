@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-HanS">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>文化人的博客  | 浅析URL</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="浅析URL" />
+<meta property="og:description" content="URL(Uniform Resource Locator)为统一资源定位符，是蒂姆·贝纳斯·李（TimBemers—Lee)提出的 WWW 其中一部分，表示如下：
+WWW=RUL&#43;HTTP&#43;HTML
+URL 由 6 部分组成 URL=协议&#43;域名或 IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点
+协议 规定请求和响应的格式的文件，如 http 或者 https。
+域名 域名就是 IP 的别称，一个域名可以对应不同的 IP，通过 DNS(Domain Name System)域名系统进行对应。 如 www.baidu.com 的 2 个 IP 分别是 39.156.69.79 和 220.181.38.148。
+ DNS 的作用  简单的说就是一个将域名翻译成 ip 地址的系统。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。
+ IP 的作用  就是定位一台设备，按照路由器（网关）隔开分为内网和外网，一个设备有自己特有的内网 IP 和外网 IP，相互不干扰，内网与外网连接必须通过路由器。如家里的手机、电脑、电视各自拥有的 IP 叫内网 IP,然而上网都要通过路由器，外网 IP 是同一个。但是每次重启路由器后，运营商会重新分配外网 IP。
+ ping 命令看自己访问的 IP
+ ping baidu.com  nslookup 命令查看所有 IP" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E6%B5%85%E6%9E%90url/" />
+<meta property="article:published_time" content="2019-10-06T20:13:39+08:00" />
+<meta property="article:modified_time" content="2019-10-06T20:13:39+08:00" />
+<meta itemprop="name" content="浅析URL">
+<meta itemprop="description" content="URL(Uniform Resource Locator)为统一资源定位符，是蒂姆·贝纳斯·李（TimBemers—Lee)提出的 WWW 其中一部分，表示如下：
+WWW=RUL&#43;HTTP&#43;HTML
+URL 由 6 部分组成 URL=协议&#43;域名或 IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点
+协议 规定请求和响应的格式的文件，如 http 或者 https。
+域名 域名就是 IP 的别称，一个域名可以对应不同的 IP，通过 DNS(Domain Name System)域名系统进行对应。 如 www.baidu.com 的 2 个 IP 分别是 39.156.69.79 和 220.181.38.148。
+ DNS 的作用  简单的说就是一个将域名翻译成 ip 地址的系统。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。
+ IP 的作用  就是定位一台设备，按照路由器（网关）隔开分为内网和外网，一个设备有自己特有的内网 IP 和外网 IP，相互不干扰，内网与外网连接必须通过路由器。如家里的手机、电脑、电视各自拥有的 IP 叫内网 IP,然而上网都要通过路由器，外网 IP 是同一个。但是每次重启路由器后，运营商会重新分配外网 IP。
+ ping 命令看自己访问的 IP
+ ping baidu.com  nslookup 命令查看所有 IP">
+
+
+<meta itemprop="datePublished" content="2019-10-06T20:13:39&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-06T20:13:39&#43;08:00" />
+<meta itemprop="wordCount" content="136">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="浅析URL"/>
+<meta name="twitter:description" content="URL(Uniform Resource Locator)为统一资源定位符，是蒂姆·贝纳斯·李（TimBemers—Lee)提出的 WWW 其中一部分，表示如下：
+WWW=RUL&#43;HTTP&#43;HTML
+URL 由 6 部分组成 URL=协议&#43;域名或 IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点
+协议 规定请求和响应的格式的文件，如 http 或者 https。
+域名 域名就是 IP 的别称，一个域名可以对应不同的 IP，通过 DNS(Domain Name System)域名系统进行对应。 如 www.baidu.com 的 2 个 IP 分别是 39.156.69.79 和 220.181.38.148。
+ DNS 的作用  简单的说就是一个将域名翻译成 ip 地址的系统。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。
+ IP 的作用  就是定位一台设备，按照路由器（网关）隔开分为内网和外网，一个设备有自己特有的内网 IP 和外网 IP，相互不干扰，内网与外网连接必须通过路由器。如家里的手机、电脑、电视各自拥有的 IP 叫内网 IP,然而上网都要通过路由器，外网 IP 是同一个。但是每次重启路由器后，运营商会重新分配外网 IP。
+ ping 命令看自己访问的 IP
+ ping baidu.com  nslookup 命令查看所有 IP"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      文化人的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">浅析URL</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-10-06T20:13:39&#43;08:00">October 6, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p>URL(Uniform Resource Locator)为统一资源定位符，是蒂姆·贝纳斯·李（TimBemers—Lee)提出的 WWW 其中一部分，表示如下：</p>
+
+<p>WWW=RUL+HTTP+HTML</p>
+
+<h1 id="url-由-6-部分组成">URL 由 6 部分组成</h1>
+
+<p>URL=协议+域名或 IP+端口号+路径+查询字符串+锚点</p>
+
+<h2 id="协议">协议</h2>
+
+<p>规定请求和响应的格式的文件，如 http 或者 https。</p>
+
+<h2 id="域名">域名</h2>
+
+<p>域名就是 IP 的别称，一个域名可以对应不同的 IP，通过 DNS(Domain Name System)域名系统进行对应。 如 www.baidu.com 的 2 个 IP 分别是 39.156.69.79 和 220.181.38.148。</p>
+
+<ul>
+<li>DNS 的作用</li>
+</ul>
+
+<p>简单的说就是一个将域名翻译成 ip 地址的系统。它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。</p>
+
+<ul>
+<li>IP 的作用</li>
+</ul>
+
+<p>就是定位一台设备，按照路由器（网关）隔开分为内网和外网，一个设备有自己特有的内网 IP 和外网 IP，相互不干扰，内网与外网连接必须通过路由器。如家里的手机、电脑、电视各自拥有的 IP 叫内网 IP,然而上网都要通过路由器，外网 IP 是同一个。但是每次重启路由器后，运营商会重新分配外网 IP。</p>
+
+<ol>
+<li><p>ping 命令看自己访问的 IP</p>
+
+<pre><code>  ping baidu.com
+</code></pre></li>
+
+<li><p>nslookup 命令查看所有 IP</p>
+
+<pre><code>  nslookup baidu.com
+</code></pre></li>
+
+<li><p>IP138.com 查看自己的外网 IP</p></li>
+</ol>
+
+<h2 id="端口号">端口号</h2>
+
+<p>TCP（Transmission Control Protocol）端口就是为 TCP 协议通信提供服务的端口。</p>
+
+<ol>
+<li>80 对应 HTTP 超文本服务器</li>
+<li>443 对应 HTTPS 安全服务</li>
+<li>21 对应 FTP 文件传输</li>
+</ol>
+
+<h2 id="路径">路径</h2>
+
+<p>请求的文件在服务器的路径，在哪里。</p>
+
+<h2 id="查询字符串">查询字符串</h2>
+
+<p>找的内容的关键字。</p>
+
+<h2 id="锚点">锚点</h2>
+
+<p>找的内容的某一部分。</p>
+
+<h2 id="域名的分类">域名的分类</h2>
+
+<p>顶级域名</p>
+
+<p>国家域名可分为不同级别，包括顶级域名、二级域名，三级域名等。</p>
+
+<p>顶级域名又分为两类：</p>
+
+<p>一是国家顶级域名（national top-level domainnames，简称 nTLDs），有 200 多个国家都按照 ISO3166 国家代码分配了顶级域名，例如中国是 cn，美国是 us。</p>
+
+<p>二是国际顶级域名（international top-level domain names，简称 iTDs），例如表示工商企业的 .com .top，表示网络提供商的.net，表示非盈利组织的.org 等。大多数域名争议都发生在 com 的顶级域名下，因为多数公司上网的目的都是为了赢利。</p>
+
+<p>二级域名</p>
+
+<p>二级域名是指顶级域名之下的域名，在国际顶级域名下，它是指域名注册人的网上名称，例如 ibm，yahoo，microsoft 等；在国家顶级域名下，它是表示注册企业类别的符号，例如 com，top，edu，gov，net 等。</p>
+
+<p>三级域名</p>
+
+<p>三级域名用字母（ A ～ Z，a ～ z，大小写等）、数字（0 ～ 9）和连接符（－）组成， 各级域名之间用实点（.）连接，三级域名的长度不能超过 20 个字符。 如无特殊原因，建议采用申请人的英文名（或者缩写）或者汉语拼音名 （或者缩写） 作为三级域名，以保持域名的清晰性和简洁性。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 文化人的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
