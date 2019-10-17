@@ -57,7 +57,7 @@ let obj = {name: &#39;frank&#39;} // name是字符串 obj.name = &#39;frank&#39;
 
 <meta itemprop="datePublished" content="2019-10-17T19:13:39&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-17T19:13:39&#43;08:00" />
-<meta itemprop="wordCount" content="100">
+<meta itemprop="wordCount" content="98">
 
 
 
@@ -203,16 +203,23 @@ let key = 'name'; ~~obj.key = 'frank'~~//错，因为obj.key等价于obj['key']
 </code></pre></li>
 </ol>
 
-<p>注意，一般无法通过自身修改或增加共有属性，只有通过修改或增加原型上的属性。如果要修改，就在一开始就改，后面中途改会导致很多问题，推荐使用Object.create.</p>
+<p>注意，一般无法通过自身修改或增加共有属性，只有通过修改或增加原型上的属性。如果要修改，就在一开始就改，后面中途改会导致很多问题，推荐使用Object.create。</p>
 
 <pre><code>let obj=Object.create(common)
 </code></pre>
 
 <p>所有的<strong>proto</strong>代码都是强烈不推荐写的。</p>
 
-<p>最后，说明一下 &lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别
-1. &lsquo;name&rsquo; in obj//检查是否含有这个属性，不区分共有和自身属性。
-2. obj.hasOwnProperty(&lsquo;name&rsquo;) //检查是否为自身的属性。</p>
+<p>最后，说明一下 &lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别。</p>
+
+<ol>
+<li>&lsquo;name&rsquo; in obj//检查是否含有这个属性，不区分共有和自身属性。</li>
+<li>obj.hasOwnProperty(&lsquo;name&rsquo;) //检查是否为自身的属性。
+
+
+
+<br /></li>
+</ol>
 <ul class="pa0">
   
 </ul>
