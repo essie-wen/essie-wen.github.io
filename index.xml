@@ -5,11 +5,30 @@
     <link>http://example.org/</link>
     <description>Recent content on 文化人的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-HanS</language>
-    <lastBuildDate>Thu, 17 Oct 2019 18:42:39 +0800</lastBuildDate>
+    <language>zh-ch</language>
+    <lastBuildDate>Thu, 17 Oct 2019 19:13:39 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS基本语法简介</title>
+      <link>http://example.org/posts/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 17 Oct 2019 19:13:39 +0800</pubDate>
+      
+      <guid>http://example.org/posts/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>声明对象的两种语法 第一种：
+let obj = { &#39;name&#39;: &#39;frank&#39;, &#39;age&#39;: 18 }  第二种
+let obj = new Object({&#39;name&#39;: &#39;frank&#39;})  记住：不要使用var。 重要的事情说三遍：键名是字符串，不是标识符，可以包含任意字符，即使省略引号也是字符串。
+如何删除对象的属性 删除对象的属性按照用下面代码：
+delete obj.xxx 或者delete obj[&#39;xxx&#39;]  检查是否已经删除
+&#39;xxx&#39; in obj ===false  如何查看对象的属性（读属性）  查看自身所有属性
+Object.keys(obj)  查看自身+共有属性
+console.dir(obj)  或者自己依次用Object.keys打印出obj.proto
+ 判断一个属性是共有属性还是自己的属性
+obj.hasOwnProperty(&#39;toString&#39;)   如何修改或增加对象的属性(写属性)  直接赋值
+let obj = {name: &#39;frank&#39;} // name是字符串 obj.name = &#39;frank&#39; // name是字符串 obj[&#39;name&#39;] = &#39;frank&#39; ~~obj[name] = &#39;frank&#39;~~ // name是变量，值不确定，错 obj[&#39;na&#39;+&#39;me&#39;] = &#39;frank&#39; let key = &#39;name&#39;; obj[key] = &#39;frank&#39; let key = &#39;name&#39;; ~~obj.</description>
+    </item>
     
     <item>
       <title>JS基本语法简介</title>
