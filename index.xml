@@ -6,10 +6,35 @@
     <description>Recent content on 文化人的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-HanS</language>
-    <lastBuildDate>Sun, 13 Oct 2019 21:42:39 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Oct 2019 18:42:39 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS基本语法简介</title>
+      <link>http://example.org/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 17 Oct 2019 18:42:39 +0800</pubDate>
+      
+      <guid>http://example.org/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/</guid>
+      <description>什么是表达式 表达式：是由运算元和运算符(可选)构成，并产生运算结果的语法结构。表达式不需要加分号。
+例如：
+1+2
+add(1,2)
+console.log(3)
+什么是语句 JavaScript 语句由以下构成：值、运算符、表达式、关键词和注释。
+例如：
+var a=1;
+JavaScript标识符命名规则 由字母、数字、$、_组成
+以字母、$、_开头
+不可以使用保留字！！！
+要有意义！！！！！！！ JavaScript 语言的标识符对大小写敏感，所以a和A是两个不同的标识符。
+if &amp;hellip;else语句 if结构先判断一个表达式的布尔值，然后根据布尔值的真伪，执行不同的语句； if代码块后面，还可以跟一个else代码块，表示不满足条件时，所要执行的代码。
+例如：
+if (m === 3) { // 满足条件时，执行的语句 } else { // 不满足条件时，执行的语句 }  while语句 While语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。while语句的循环条件是一个表达式，必须放在圆括号中。代码块部分，如果只有一条语句，可以省略大括号，否则就必须加上大括号。
+var i = 0; while (i &amp;lt; 50) { console.log(&#39;i 当前为：&#39; + i); i = i + 1; }  for语句 for语句是循环命令的另一种形式，可以指定循环的起点、终点和终止条件。它的格式如下。
+var x = 3; for (var i = 0; i &amp;lt; x; i++) { console.</description>
+    </item>
     
     <item>
       <title>JavaScript的诞生</title>
