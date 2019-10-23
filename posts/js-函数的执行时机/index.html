@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>文化人的博客  | JS函数的执行时机</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.58.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="JS函数的执行时机" />
+<meta property="og:description" content="在使用JS函数一定要考虑执行时机，比如如下一段代码，本意是要打印出0~5，可结果却是6个6。怎么理解呢？一起看看吧。
+let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  首先，setTimeout的设定为0，表示立即执行，前提是要完成当前的循环。
+当i=0，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=1，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=2，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=3，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=4，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=5，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=6，结束循环，可以开始执行打印i（总共标记了6次，所有要打印6次，此时i=6了呀）
+所有 得到了6个6.
+怎么打印出0~5呢，ES6做了优化。超级简单，把let放入for循环即可，万能的let&amp;for，没有为什么，JS之父made it，记住就好。
+ for(let i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  再简单一点，直接拿掉setTimeout也可以。打印出0~5.
+let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ console.log(i) }  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" />
+<meta property="article:published_time" content="2019-10-23T18:42:39+08:00" />
+<meta property="article:modified_time" content="2019-10-23T18:42:39+08:00" />
+<meta itemprop="name" content="JS函数的执行时机">
+<meta itemprop="description" content="在使用JS函数一定要考虑执行时机，比如如下一段代码，本意是要打印出0~5，可结果却是6个6。怎么理解呢？一起看看吧。
+let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  首先，setTimeout的设定为0，表示立即执行，前提是要完成当前的循环。
+当i=0，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=1，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=2，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=3，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=4，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=5，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=6，结束循环，可以开始执行打印i（总共标记了6次，所有要打印6次，此时i=6了呀）
+所有 得到了6个6.
+怎么打印出0~5呢，ES6做了优化。超级简单，把let放入for循环即可，万能的let&amp;for，没有为什么，JS之父made it，记住就好。
+ for(let i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  再简单一点，直接拿掉setTimeout也可以。打印出0~5.
+let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ console.log(i) }  ">
+
+
+<meta itemprop="datePublished" content="2019-10-23T18:42:39&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-23T18:42:39&#43;08:00" />
+<meta itemprop="wordCount" content="52">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JS函数的执行时机"/>
+<meta name="twitter:description" content="在使用JS函数一定要考虑执行时机，比如如下一段代码，本意是要打印出0~5，可结果却是6个6。怎么理解呢？一起看看吧。
+let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  首先，setTimeout的设定为0，表示立即执行，前提是要完成当前的循环。
+当i=0，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=1，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=2，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=3，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=4，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=5，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=6，结束循环，可以开始执行打印i（总共标记了6次，所有要打印6次，此时i=6了呀）
+所有 得到了6个6.
+怎么打印出0~5呢，ES6做了优化。超级简单，把let放入for循环即可，万能的let&amp;for，没有为什么，JS之父made it，记住就好。
+ for(let i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  再简单一点，直接拿掉setTimeout也可以。打印出0~5.
+let i = 0 for(i = 0; i&lt;6; i&#43;&#43;){ console.log(i) }  "/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      文化人的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">JS函数的执行时机</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-10-23T18:42:39&#43;08:00">October 23, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>在使用JS函数一定要考虑执行时机，比如如下一段代码，本意是要打印出0~5，可结果却是6个6。怎么理解呢？一起看看吧。</p>
+
+<pre><code>let i = 0
+for(i = 0; i&lt;6; i++){
+  setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+} // 结果为6，6，6，6，6，6
+</code></pre>
+
+<p>首先，setTimeout的设定为0，表示立即执行，前提是要完成当前的循环。<br />
+当i=0，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；<br />
+当i=1，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；<br />
+当i=2，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；<br />
+当i=3，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；<br />
+当i=4，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；<br />
+当i=5，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；<br />
+当i=6，结束循环，可以开始执行打印i（总共标记了6次，所有要打印6次，此时i=6了呀）<br />
+所有 得到了6个6.<br />
+怎么打印出0~5呢，ES6做了优化。超级简单，把let放入for循环即可，万能的let&amp;for，没有为什么，JS之父made it，记住就好。</p>
+
+<pre><code>
+for(let i = 0; i&lt;6; i++){
+  setTimeout(()=&gt;{
+    console.log(i)
+  },0)
+} // 结果为6，6，6，6，6，6
+</code></pre>
+
+<p>再简单一点，直接拿掉setTimeout也可以。打印出0~5.</p>
+
+<pre><code>let i = 0
+for(i = 0; i&lt;6; i++){
+  
+    console.log(i)
+  
+}
+</code></pre>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 文化人的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

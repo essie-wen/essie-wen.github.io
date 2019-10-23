@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/" />
 
-<meta property="og:updated_time" content="2019-10-17T19:13:39+08:00" />
+<meta property="og:updated_time" content="2019-10-23T18:42:39+08:00" />
 <meta itemprop="name" content="文化人的博客">
 <meta itemprop="description" content="">
 
@@ -120,6 +120,42 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="color-inherit dim link">
+            JS函数的执行时机
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          在使用JS函数一定要考虑执行时机，比如如下一段代码，本意是要打印出0~5，可结果却是6个6。怎么理解呢？一起看看吧。
+let i = 0 for(i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  首先，setTimeout的设定为0，表示立即执行，前提是要完成当前的循环。
+当i=0，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=1，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=2，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=3，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=4，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=5，标记要执行1次打印i（执行时机setTimeout在完成当前循环后）；
+当i=6，结束循环，可以开始执行打印i（总共标记了6次，所有要打印6次，此时i=6了呀）
+所有 得到了6个6.
+怎么打印出0~5呢，ES6做了优化。超级简单，把let放入for循环即可，万能的let&amp;for，没有为什么，JS之父made it，记住就好。
+ for(let i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) } // 结果为6，6，6，6，6，6  再简单一点，直接拿掉setTimeout也可以。打印出0~5.
+let i = 0 for(i = 0; i&lt;6; i++){ console.log(i) }  
+        </div>
+          <a href="/posts/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/js%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="color-inherit dim link">
             JS基本语法简介
             </a>
@@ -187,47 +223,18 @@ var x = 3; for (var i = 0; i &lt; x; i++) { console.
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="color-inherit dim link">
-            JavaScript的诞生
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-           概述 JavaScript是一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。已经被广泛用于Web应用开发,常用来为网页添加各式各样的动态功能,为用户提供更流畅美观的浏览效果。常用用途： 1. 嵌入动态文本于HTML页面。 2. 对浏览器事件做出响应。
-3. 读写HTML元素。
-4. 在数据被提交到服务器之前验证数据。
-5. 检测访客的浏览器信息。
-6. 控制cookies，包括创建和修改等。 7. 基于Node.js技术进行服务器端编程。
-Javascript之父 1994年，网景公司（Netscape）发布了Navigator浏览器0.9版，但不具备与访问者互动的能力。1995年4月网景公司录用Brendan Eich，来研究将Scheme语言作为网页脚本语言的可能性。同时1995年Sun公司将Oak语言改名为Java，网景公司动了心，决定与Sun公司结成联盟。1995年5月Brendan Eich被指定为这种&rdquo;简化版Java语言&rdquo;的设计师，他只用10天时间就把Javascript设计出来了，设计思路如下： 1. 借鉴C语言的基本语法；
- 借鉴Java语言的数据类型和内存管理；
- 借鉴Scheme语言，将函数提升到&rdquo;第一等公民&rdquo;（first class）的地位；
- 借鉴Self语言，使用基于原型（prototype）的继承机制。
-  JavaScript 国际标准 JavaScript已经被Netscape公司提交给ECMA制定为标准，称之为ECMAScript，标准编号ECMA-262。目前最新版为ECMA-262 5th Edition。符合ECMA-262 3rd Edition标准的实现有： 1. Microsoft公司的JScript. 2. Mozilla的JavaScript-C（C语言实现），现名SpiderMonkey 3. Mozilla的Rhino（Java实现） 4. Digital Mars公司的DMDScript 5. Google公司的V8 6. WebKit
-JavaScript 的缺陷 由于设计时间太短，语言的一些细节考虑得不够严谨，导致后来很长一段时间，Javascript写出来的程序混乱不堪。且不适合开发大型程序和非常小的标准库等等。 但是Javascript并不算糟糕，相反它的编程能力很强大，前途很光明。
-首先，如果遵守良好的编程规范，加上第三方函数库的帮助，Javascript的这些缺陷大部分可以回避。 其次，Javascript目前是网页编程的唯一语言，只要互联网继续发展，它就必然一起发展。目前，许多新项目大大扩展了它的用途，node.js使得Javascript可以用于后端的服务器编程，coffeeScript使你可以用python和ruby的语法，撰写Javascript详细可以查阅阮一峰的一遍文章： http://www.ruanyifeng.com/blog/2011/06/10_design_defects_in_javascript.html 
-        </div>
-          <a href="/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
+              JavaScript的诞生
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/%E6%B5%85%E6%9E%90url/" class="link black dim">
@@ -244,12 +251,6 @@ JavaScript 的缺陷 由于设计时间太短，语言的一些细节考虑得�
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE-/" class="link black dim">
               HTML常用标签
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE-%E6%9C%89%E5%9B%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA/" class="link black dim">
-              HTML常用标签 有图片无法显示
             </a>
           </h2>
         
