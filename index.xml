@@ -6,10 +6,19 @@
     <description>Recent content on 文化人的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-ch</language>
-    <lastBuildDate>Wed, 23 Oct 2019 18:42:39 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Oct 2019 18:42:39 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS返回数组中最小的数和按从小到大排序</title>
+      <link>http://example.org/posts/%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/</link>
+      <pubDate>Tue, 29 Oct 2019 18:42:39 +0800</pubDate>
+      
+      <guid>http://example.org/posts/%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/</guid>
+      <description>如何返回数组中最小的数 let min = numbers =&amp;gt; { if (numbers.length &amp;gt; 2) { return min([numbers[0], min(numbers.slice(1))]) } else { return Math.min.apply(null, numbers) } }  如何将数组按照从小到大进行排列 //求最小 let min = numbers =&amp;gt; { if (numbers.length &amp;gt; 2) { return min([numbers[0], min(numbers.slice(1))]); } else { return Math.min.apply(null, numbers); } }; // 按从小到大排列 let sort = numbers =&amp;gt; { if (numbers.length &amp;gt; 2) { let index = minIndex(numbers); let min = numbers[index]; numbers.</description>
+    </item>
     
     <item>
       <title>JS函数的执行时机</title>

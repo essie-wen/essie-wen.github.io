@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/" />
 
-<meta property="og:updated_time" content="2019-10-23T18:42:39+08:00" />
+<meta property="og:updated_time" content="2019-10-29T18:42:39+08:00" />
 <meta itemprop="name" content="文化人的博客">
 <meta itemprop="description" content="">
 
@@ -120,6 +120,30 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/" class="color-inherit dim link">
+            JS返回数组中最小的数和按从小到大排序
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          如何返回数组中最小的数 let min = numbers =&gt; { if (numbers.length &gt; 2) { return min([numbers[0], min(numbers.slice(1))]) } else { return Math.min.apply(null, numbers) } }  如何将数组按照从小到大进行排列 //求最小 let min = numbers =&gt; { if (numbers.length &gt; 2) { return min([numbers[0], min(numbers.slice(1))]); } else { return Math.min.apply(null, numbers); } }; // 按从小到大排列 let sort = numbers =&gt; { if (numbers.length &gt; 2) { let index = minIndex(numbers); let min = numbers[index]; numbers.
+        </div>
+          <a href="/posts/%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/js-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="color-inherit dim link">
             JS函数的执行时机
             </a>
@@ -183,52 +207,18 @@ let obj = {name: 'frank'} // name是字符串 obj.name = 'frank' // name是字�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/" class="color-inherit dim link">
-            JS基本语法简介
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          什么是表达式 表达式：是由运算元和运算符(可选)构成，并产生运算结果的语法结构。表达式不需要加分号。
-例如：
-1+2
-add(1,2)
-console.log(3)
-什么是语句 JavaScript 语句由以下构成：值、运算符、表达式、关键词和注释。
-例如：
-var a=1;
-JavaScript标识符命名规则 由字母、数字、$、_组成
-以字母、$、_开头
-不可以使用保留字！！！
-要有意义！！！！！！！ JavaScript 语言的标识符对大小写敏感，所以a和A是两个不同的标识符。
-if &hellip;else语句 if结构先判断一个表达式的布尔值，然后根据布尔值的真伪，执行不同的语句； if代码块后面，还可以跟一个else代码块，表示不满足条件时，所要执行的代码。
-例如：
-if (m === 3) { // 满足条件时，执行的语句 } else { // 不满足条件时，执行的语句 }  while语句 While语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。while语句的循环条件是一个表达式，必须放在圆括号中。代码块部分，如果只有一条语句，可以省略大括号，否则就必须加上大括号。
-var i = 0; while (i &lt; 50) { console.log('i 当前为：' + i); i = i + 1; }  for语句 for语句是循环命令的另一种形式，可以指定循环的起点、终点和终止条件。它的格式如下。
-var x = 3; for (var i = 0; i &lt; x; i++) { console.
-        </div>
-          <a href="/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%AE%80%E4%BB%8B/" class="link black dim">
+              JS基本语法简介
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
@@ -245,12 +235,6 @@ var x = 3; for (var i = 0; i &lt; x; i++) { console.
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
               CSS知识总结
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE-/" class="link black dim">
-              HTML常用标签
             </a>
           </h2>
         
